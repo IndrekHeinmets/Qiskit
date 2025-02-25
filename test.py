@@ -1,5 +1,5 @@
-import qiskit
 import bluequbit
+import qiskit
 import os
 
 bq = bluequbit.init(os.getenv('BQ_TOKEN'))
