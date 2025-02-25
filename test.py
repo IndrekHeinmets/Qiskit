@@ -15,4 +15,6 @@ try:
     result = bq.run(qc, device='quantum', shots=100)
     print(result.get_counts())
 except bluequbit.exceptions.BQJobNotCompleteError:
-    print('Quantum device offline!')
+    print('Quantum device offline! Try Mon-Fri 12:00-15:00')
+except Exception as e:
+    print('An error occurred:', e)
